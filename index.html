@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VEDYUG NATURALS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f7f7f7;
+color:#222;
+overflow-x:hidden;
+}
+
+header{
+background:#0f3d2e;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+}
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:65px;
+color:white;
+font-weight:700;
+}
+
+.hero-content p{
+color:#eee;
+font-size:20px;
+margin-top:20px;
+line-height:35px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#1c6b4a;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:16px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#145239;
+}
+
+.section-title{
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#0f3d2e;
+font-weight:700;
+}
+
+.products{
+padding:90px 6%;
+background:white;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.product-content{
+padding:22px;
+text-align:center;
+}
+
+.product-content h3{
+font-size:24px;
+margin-bottom:10px;
+color:#0f3d2e;
+}
+
+.price{
+font-size:22px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.about{
+padding:90px 6%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:60px;
+align-items:center;
+background:#eef6f0;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text h2{
+font-size:45px;
+color:#0f3d2e;
+margin-bottom:25px;
+}
+
+.about-text p{
+font-size:18px;
+line-height:35px;
+color:#444;
+}
+
+.private{
+padding:90px 6%;
+background:white;
+}
+
+.private-box{
+background:#eef6f0;
+padding:50px;
+border-radius:25px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.private-box h2{
+font-size:42px;
+margin-bottom:25px;
+color:#0f3d2e;
+}
+
+.private-box p{
+font-size:20px;
+line-height:40px;
+color:#333;
+}
+
+.contact{
+padding:90px 6%;
+background:#0f3d2e;
+text-align:center;
+color:white;
+}
+
+.contact h2{
+font-size:45px;
+margin-bottom:25px;
+}
+
+.contact p{
+font-size:20px;
+line-height:40px;
+}
+
+footer{
+background:#08251c;
+padding:25px;
+text-align:center;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:16px;
+line-height:28px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.about-text h2{
+font-size:35px;
+}
+
+.private-box{
+padding:30px;
+}
+
+.private-box h2{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+VEDYUG NATURALS
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Private Label</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Premium Herbal Henna Products</h1>
+
+<p>
+Natural Henna Powder & Essential Oils for Bridal,
+Professional & Wholesale Use
+</p>
+
+<a href="https://wa.me/919376628704" class="btn">
+Order On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section class="products">
+
+<h2 class="section-title">
+Our Products
+</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
+<div class="product-content">
+<h3>BAQ Henna Powder</h3>
+<div class="price">₹240 / KG</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<div class="product-content">
+<h3>Henna Mix Oil</h3>
+<div class="price">₹100</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+<div class="product-content">
+<h3>Mehandi Oil</h3>
+<div class="price">₹120</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<div class="product-content">
+<h3>Bridal Oil</h3>
+<div class="price">₹130</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<div class="product-content">
+<h3>Eucalyptus Oil</h3>
+<div class="price">₹140</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+<div class="product-content">
+<h3>Tea Tree Oil</h3>
+<div class="price">₹180</div>
+<a href="https://wa.me/919376628704" class="btn">Order Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+
+<div class="about-text">
+
+<h2>About Vedyug Naturals</h2>
+
+<p>
+VEDYUG NATURALS manufactures premium herbal henna
+powder and essential oils for bridal artists, wholesalers,
+resellers and export businesses. We focus on quality,
+natural ingredients and professional results.
+</p>
+
+</div>
+
+</section>
+
+<section class="private">
+
+<div class="private-box">
+
+<h2>Private Label Manufacturing</h2>
+
+<p>
+
+BAQ Henna Powder — ₹250/KG<br>
+
+Henna Mix Oil — ₹110<br>
+
+Mehandi Oil — ₹130<br>
+
+Bridal Oil — ₹140<br>
+
+Eucalyptus Oil — ₹150<br>
+
+Tea Tree Oil — ₹190<br>
+
+Lavender Oil — ₹170
+
+</p>
+
+<a href="https://wa.me/917568538704" class="btn">
+Start Private Labeling
+</a>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+
+WhatsApp:<br>
+
+9376628704<br>
+7568538704
+
+<br><br>
+
+Instagram:<br>
+
+https://www.instagram.com/_henna_mehandi
+
+</p>
+
+</section>
+
+<footer>
+
+© VEDYUG NATURALS
+
+</footer>
+
+</body>
+</html>
