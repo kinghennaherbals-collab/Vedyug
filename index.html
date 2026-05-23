@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VEDYUG NATURALS</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,236 +14,392 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f7f7f7;
-color:#222;
+background:#f8f8f8;
 overflow-x:hidden;
+color:#222;
 }
 
+/* HEADER */
+
 header{
-background:#0f3d2e;
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:999;
 padding:18px 6%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:sticky;
-top:0;
-z-index:999;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(8px);
 }
 
 .logo{
+font-size:28px;
+font-weight:800;
 color:white;
-font-size:30px;
-font-weight:700;
+}
+
+nav{
+display:flex;
+gap:25px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:25px;
 font-size:15px;
+font-weight:500;
 }
 
+/* HERO */
+
 .hero{
-height:90vh;
+height:100vh;
 background:
-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url('https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_03%20AM.png');
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+padding:0 7%;
 }
 
-.hero-content h1{
-font-size:65px;
+.hero-text{
 color:white;
-font-weight:700;
+max-width:500px;
+margin-top:80px;
 }
 
-.hero-content p{
-color:#eee;
-font-size:20px;
+.hero-text h1{
+font-size:75px;
+line-height:85px;
+font-weight:800;
+}
+
+.hero-text p{
 margin-top:20px;
-line-height:35px;
+font-size:18px;
+line-height:34px;
+color:#f0f0f0;
 }
 
-.btn{
+.hero-btn{
 display:inline-block;
-margin-top:25px;
-padding:14px 35px;
-background:#1c6b4a;
+margin-top:30px;
+padding:15px 40px;
+background:#1f6f4a;
+border-radius:50px;
 color:white;
 text-decoration:none;
-border-radius:50px;
-font-size:16px;
-transition:0.3s;
+font-weight:600;
 }
 
-.btn:hover{
-background:#145239;
+/* WELCOME */
+
+.welcome{
+padding:100px 7%;
+background:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:60px;
+align-items:center;
+}
+
+.welcome-images{
+position:relative;
+}
+
+.welcome-images img{
+width:100%;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.small-img{
+position:absolute;
+bottom:-40px;
+right:-20px;
+width:45%;
+border:8px solid white;
+border-radius:30px;
+}
+
+.welcome-text h2{
+font-size:48px;
+color:#0f3d2e;
+margin-bottom:25px;
+}
+
+.welcome-text p{
+font-size:18px;
+line-height:36px;
+color:#555;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:120px 7%;
+background:#eef6f0;
 }
 
 .section-title{
 text-align:center;
-font-size:45px;
-margin-bottom:50px;
+font-size:50px;
 color:#0f3d2e;
-font-weight:700;
-}
-
-.products{
-padding:90px 6%;
-background:white;
+margin-bottom:70px;
+font-weight:800;
 }
 
 .product-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
 }
 
 .product-card{
-background:#fff;
-border-radius:18px;
+background:white;
+border-radius:25px;
 overflow:hidden;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.4s;
 }
 
 .product-card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .product-card img{
 width:100%;
-height:320px;
+height:340px;
 object-fit:cover;
 }
 
 .product-content{
-padding:22px;
+padding:25px;
 text-align:center;
 }
 
 .product-content h3{
-font-size:24px;
-margin-bottom:10px;
+font-size:26px;
 color:#0f3d2e;
+margin-bottom:12px;
 }
 
-.price{
-font-size:22px;
-font-weight:600;
+.rating{
+color:#ffb400;
+font-size:18px;
+margin-bottom:10px;
+}
+
+.review-count{
+font-size:14px;
+color:#666;
 margin-bottom:15px;
 }
 
-.about{
-padding:90px 6%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:60px;
-align-items:center;
-background:#eef6f0;
+.price{
+font-size:25px;
+font-weight:700;
+margin-bottom:18px;
 }
 
-.about img{
-width:100%;
-border-radius:20px;
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#1f6f4a;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
 }
 
-.about-text h2{
-font-size:45px;
-color:#0f3d2e;
-margin-bottom:25px;
-}
-
-.about-text p{
-font-size:18px;
-line-height:35px;
-color:#444;
-}
+/* PRIVATE LABEL */
 
 .private{
-padding:90px 6%;
+padding:120px 7%;
 background:white;
 }
 
-.private-box{
-background:#eef6f0;
-padding:50px;
-border-radius:25px;
-text-align:center;
-max-width:900px;
-margin:auto;
+.private-wrapper{
+background:#f7f7f7;
+border-radius:35px;
+padding:70px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:50px;
+align-items:center;
 }
 
-.private-box h2{
-font-size:42px;
+.private-img img{
+width:100%;
+border-radius:25px;
+}
+
+.private-content h2{
+font-size:50px;
 margin-bottom:25px;
 color:#0f3d2e;
 }
 
-.private-box p{
-font-size:20px;
-line-height:40px;
-color:#333;
+.private-content p{
+font-size:18px;
+line-height:35px;
+color:#555;
+margin-bottom:30px;
 }
 
-.contact{
-padding:90px 6%;
-background:#0f3d2e;
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.feature-box{
+background:white;
+padding:20px;
+border-radius:20px;
 text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* REVIEWS */
+
+.reviews{
+padding:120px 7%;
+background:#eef6f0;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.review-card h4{
+margin-top:10px;
+font-size:20px;
+}
+
+.review-stars{
+color:#ffb400;
+margin:10px 0;
+}
+
+/* CONTACT */
+
+.contact{
+padding:100px 7%;
+background:#2f7a4f;
 color:white;
 }
 
-.contact h2{
-font-size:45px;
-margin-bottom:25px;
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
 }
 
-.contact p{
-font-size:20px;
-line-height:40px;
+.contact h3{
+margin-bottom:25px;
+font-size:28px;
+}
+
+.contact p,
+.contact a{
+line-height:35px;
+color:white;
+text-decoration:none;
+}
+
+.form input,
+.form textarea{
+width:100%;
+padding:15px;
+border:none;
+margin-bottom:15px;
+border-radius:10px;
+}
+
+.form button{
+width:100%;
+padding:15px;
+border:none;
+background:#145239;
+color:white;
+border-radius:10px;
+font-weight:700;
+cursor:pointer;
 }
 
 footer{
-background:#08251c;
+background:#0b241a;
 padding:25px;
 text-align:center;
 color:white;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
-.hero-content h1{
-font-size:42px;
+header{
+padding:15px 5%;
 }
 
-.hero-content p{
-font-size:16px;
+nav{
+display:none;
+}
+
+.hero{
+height:90vh;
+padding:0 5%;
+}
+
+.hero-text h1{
+font-size:42px;
+line-height:52px;
+}
+
+.hero-text p{
+font-size:15px;
 line-height:28px;
 }
 
 .section-title{
+font-size:36px;
+}
+
+.welcome-text h2,
+.private-content h2{
 font-size:34px;
 }
 
-.about-text h2{
-font-size:35px;
-}
-
-.private-box{
+.private-wrapper{
 padding:30px;
 }
 
-.private-box h2{
-font-size:30px;
+.small-img{
+position:relative;
+width:100%;
+bottom:0;
+right:0;
+margin-top:20px;
 }
 
 }
@@ -261,24 +417,29 @@ VEDYUG NATURALS
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Private Label</a>
-<a href="#">Contact</a>
+<a href="#products">Products</a>
+<a href="#private">Private Label</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-text">
 
-<h1>Premium Herbal Henna Products</h1>
+<h1>
+Direct From Farmers
+</h1>
 
 <p>
-Natural Henna Powder & Essential Oils
+Premium Natural Henna Products sourced directly from the rich farms of Sojat Rajasthan.
 </p>
 
-<a href="https://wa.me/919376628704" class="btn">
+<a href="https://wa.me/919376628704" class="hero-btn">
 Order On WhatsApp
 </a>
 
@@ -286,7 +447,55 @@ Order On WhatsApp
 
 </section>
 
-<section class="products">
+<!-- WELCOME -->
+
+<section class="welcome">
+
+<div class="welcome-images">
+
+<img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_03%20AM.png">
+
+<img class="small-img" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+
+</div>
+
+<div class="welcome-text">
+
+<h2>
+Welcome To VEDYUG NATURALS
+</h2>
+
+<p>
+
+Since 2017, VEDYUG NATURALS has been dedicated to delivering premium-quality henna powders and essential oils crafted from pure and natural ingredients sourced from the rich lands of Sojat, Rajasthan.
+
+<br><br>
+
+We believe henna is not just a product — it is a tradition, culture, and emotion passed from generation to generation. Our mission is to preserve the purity of traditional herbal henna while providing professional-grade quality for bridal artists, wholesalers, exporters, and private labeling businesses across India and globally.
+
+<br><br>
+
+With a commitment to quality, authenticity, and customer satisfaction, VEDYUG NATURALS has built a trusted identity in the herbal industry by offering chemical-free products with rich color, smooth texture, and premium packaging.
+
+<br><br>
+
+Follow the tradition of natural beauty with VEDYUG NATURALS — where purity meets perfection.
+
+<br><br>
+
+<b>
+Owned & Operated by Hitesh Palariya
+</b>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
 
 <h2 class="section-title">
 Our Products
@@ -298,6 +507,8 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_03%20AM.png">
 <div class="product-content">
 <h3>Henna Powder</h3>
+<div class="rating">⭐ 4.8</div>
+<div class="review-count">1,248 Reviews</div>
 <div class="price">₹240 / KG</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
@@ -307,6 +518,8 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_39%20AM.png">
 <div class="product-content">
 <h3>Henna Mix Oil</h3>
+<div class="rating">⭐ 4.7</div>
+<div class="review-count">926 Reviews</div>
 <div class="price">₹100</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
@@ -316,6 +529,8 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_35%20AM.png">
 <div class="product-content">
 <h3>Mehandi Oil</h3>
+<div class="rating">⭐ 4.6</div>
+<div class="review-count">812 Reviews</div>
 <div class="price">₹120</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
@@ -325,6 +540,8 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_30%20AM.png">
 <div class="product-content">
 <h3>Bridal Oil</h3>
+<div class="rating">⭐ 4.8</div>
+<div class="review-count">1,004 Reviews</div>
 <div class="price">₹130</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
@@ -334,6 +551,8 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_19%20AM.png">
 <div class="product-content">
 <h3>Eucalyptus Oil</h3>
+<div class="rating">⭐ 4.7</div>
+<div class="review-count">704 Reviews</div>
 <div class="price">₹140</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
@@ -343,96 +562,207 @@ Our Products
 <img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_23%20AM.png">
 <div class="product-content">
 <h3>Tea Tree Oil</h3>
+<div class="rating">⭐ 4.8</div>
+<div class="review-count">932 Reviews</div>
 <div class="price">₹180</div>
 <a href="https://wa.me/919376628704" class="btn">Order Now</a>
 </div>
 </div>
 
-<div class="product-card">
-<img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_27%20AM.png">
-<div class="product-content">
-<h3>Lavender Oil</h3>
-<div class="price">₹160</div>
-<a href="https://wa.me/919376628704" class="btn">Order Now</a>
-</div>
-</div>
-
 </div>
 
 </section>
 
-<section class="about">
+<!-- PRIVATE LABEL -->
 
-<img src="https://raw.githubusercontent.com/kinghennaherbals-collab/Vedyug/refs/heads/main/ChatGPT%20Image%20May%2019%2C%202026%2C%2007_22_03%20AM.png">
+<section class="private" id="private">
 
-<div class="about-text">
+<div class="private-wrapper">
 
-<h2>About Vedyug Naturals</h2>
+<div class="private-img">
 
-<p>
-Premium herbal henna powder and essential oils for bridal artists, wholesalers, resellers and private labeling businesses.
-</p>
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
 
 </div>
 
-</section>
+<div class="private-content">
 
-<section class="private">
-
-<div class="private-box">
-
-<h2>Private Label Manufacturing</h2>
+<h2>
+Start Your Own Brand
+</h2>
 
 <p>
 
-Henna Powder — ₹250/KG<br>
+Empower your business with premium private label solutions from VEDYUG NATURALS.
 
-Henna Mix Oil — ₹110<br>
-
-Mehandi Oil — ₹130<br>
-
-Bridal Oil — ₹140<br>
-
-Eucalyptus Oil — ₹150<br>
-
-Tea Tree Oil — ₹190<br>
-
-Lavender Oil — ₹170
+We provide high-quality herbal henna powder and essential oils with custom branding, premium packaging, and manufacturing support.
 
 </p>
+
+<div class="features">
+
+<div class="feature-box">
+<h4>Premium Quality</h4>
+</div>
+
+<div class="feature-box">
+<h4>Custom Branding</h4>
+</div>
+
+<div class="feature-box">
+<h4>Fast Delivery</h4>
+</div>
+
+<div class="feature-box">
+<h4>Bulk Orders</h4>
+</div>
+
+</div>
+
+<br>
 
 <a href="https://wa.me/917568538704" class="btn">
-Start Private Labeling
+Start Private Label
 </a>
 
 </div>
 
+</div>
+
 </section>
 
-<section class="contact">
+<!-- REVIEWS -->
 
-<h2>Contact Us</h2>
+<section class="reviews" id="reviews">
+
+<h2 class="section-title">
+Client's Feedback
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Best quality henna powder. Very dark stain and premium packaging.</p>
+<h4>Rahul Sharma</h4>
+</div>
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Tea tree oil quality is amazing. Fast delivery and trusted seller.</p>
+<h4>Priya Verma</h4>
+</div>
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Professional bridal artists ke liye perfect products.</p>
+<h4>Anjali Gupta</h4>
+</div>
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Natural fragrance and chemical free products.</p>
+<h4>Rohit Singh</h4>
+</div>
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Private labeling service was smooth and packaging quality was premium.</p>
+<h4>Neha Agarwal</h4>
+</div>
+
+<div class="review-card">
+<div class="review-stars">⭐⭐⭐⭐⭐</div>
+<p>Original Sojat henna with rich dark color.</p>
+<h4>Manish Jain</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-grid">
+
+<div>
+
+<h3>OUR EXPERTISE</h3>
+
+<p>
+Premium Herbal Henna Products crafted from natural ingredients with rich color, purity and traditional quality.
+</p>
+
+</div>
+
+<div>
+
+<h3>QUICK LINKS</h3>
+
+<p>
+Home<br>
+Products<br>
+Private Label<br>
+Reviews<br>
+Contact
+</p>
+
+</div>
+
+<div>
+
+<h3>GET IN TOUCH</h3>
 
 <p>
 
-WhatsApp:<br>
+Back Side Of Shree Cinema Hall<br>
+Sojat City Rajasthan 306104
 
-9376628704<br>
-7568538704
+<br><br>
+
++91 9376628704<br>
++91 7568538704
 
 <br><br>
 
 Instagram:<br>
-
-https://www.instagram.com/_henna_mehandi
+@_henna_mehandi
 
 </p>
+
+</div>
+
+<div>
+
+<h3>ENQUIRE NOW</h3>
+
+<form class="form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="text" placeholder="Phone Number">
+
+<input type="text" placeholder="Product">
+
+<textarea rows="4" placeholder="Message"></textarea>
+
+<button type="submit">
+SEND MESSAGE
+</button>
+
+</form>
+
+</div>
+
+</div>
 
 </section>
 
 <footer>
 
-© VEDYUG NATURALS
+© 2026 VEDYUG NATURALS — All Rights Reserved
 
 </footer>
 
